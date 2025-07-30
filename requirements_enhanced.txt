@@ -1,0 +1,12 @@
+# Enhanced requirements for integrated system
+pandas>=1.5.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+scipy>=1.7.0
+nba_api>=1.1.0
+requests>=2.25.0
+
+# New dependencies for enhanced features
+typing>=3.7.0  # For type hints (usually built-in)
+python-dateutil>=2.8.0  # For enhanced date handling

@@ -276,10 +276,6 @@ class TimeframeAlgorithm:
             pps = 0
             for stat, weight in weights.items():
                 contribution = weight * z_scores[stat]
-                # Hard cap: no single stat can contribute more than +1.5 to PPS
-                if contribution > 1.5:
-                    contribution = 1.5
-                pps += contribution
         else:
             pps = sum(weights[stat] * z_scores[stat] for stat in weights.keys())
         

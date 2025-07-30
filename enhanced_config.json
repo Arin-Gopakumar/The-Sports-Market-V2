@@ -1,0 +1,38 @@
+# enhanced_config.json
+{
+    "sportradar": {
+        "api_key": "i9UB7laRVsN2jqUo8KuJOEL9EoGXSpVnT1Yo9mK5",
+        "base_url": "https://api.sportradar.com/nba/trial/v8/en",
+        "rate_limit_delay": 1.0,
+        "cache_ttl_seconds": 300
+    },
+    "monte_carlo": {
+        "default_simulations": 10000,
+        "enhanced_variance": {
+            "points": 0.10,
+            "rebounds": 0.15,
+            "assists": 0.15
+        },
+        "contextual_adjustments": {
+            "superstar_injury_boost": 0.05,
+            "starter_injury_boost": 0.02,
+            "role_player_injury_boost": 0.005,
+            "home_court_boost": 0.02,
+            "away_game_penalty": -0.025,
+            "back_to_back_penalty": -0.06,
+            "rest_advantage_boost": 0.015
+        }
+    },
+    "market": {
+        "default_base_price": 30.0,
+        "price_floor": 1.0,
+        "price_ceiling": 100.0
+    },
+    "data": {
+        "default_season": "2023-24",
+        "priority_players": [
+            "LeBron James", "Stephen Curry", "Kevin Durant", 
+            "Giannis Antetokounmpo", "Nikola Jokic", "Luka Doncic"
+        ]
+    }
+}
