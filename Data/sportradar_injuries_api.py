@@ -159,9 +159,12 @@ class SportradarInjuriesAPI:
         api_name_lower = api_team_name.lower()
         search_name_lower = search_team_name.lower()
         
-        # Direct match
-        if search_name_lower in api_name_lower or api_name_lower in search_name_lower:
-            return True
+
+        if not api_team_name or not search_team_name:
+            return False
+            
+        api_name_lower = api_team_name.lower()
+        search_name_lower = search_team_name.lower()
         
         # Common team name mappings
         team_mappings = {
